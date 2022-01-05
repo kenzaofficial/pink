@@ -1,0 +1,19 @@
+@use "sass:math";
+@import "fonts";
+@import "null";
+@import "header";
+@import "intro";
+@import "about";
+@import "reviews";
+@import "price";
+@import "contacts";
+@import "map";
+@import "footer";
+
+
+.title {
+font-size: 24px;
+font-weight: 300;
+line-height: 1.1;
+text-align: center;
+}

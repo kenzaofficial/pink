@@ -1,0 +1,121 @@
+.price {
+  padding: 80px 0px 40px 0px;
+  color: #fff;
+  background: #f2f2f2;
+  /* .price__container */
+
+  &__container {
+  }
+
+  /* .price__top */
+
+  &__top {
+    position: relative;
+    padding: 15px;
+    background: #283645;
+    text-align: center;
+    border-left: 2px solid #f2f2f2;
+    border-right: 2px solid #f2f2f2;
+  }
+  .hit::before {
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: -34px;
+    width: 100px;
+    height: 30px;
+    transform: rotate(-45deg);
+    background-color: transparent;
+    border-style: solid;
+    border-width: 27px;
+    border-color: transparent transparent #d22856;
+  }
+  .hit::after {
+    content: "ХИТ";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transform: rotate(-45deg);
+    font-size: 14px;
+    line-height: 30px;
+    color: #fff;
+  }
+  /* .price__title */
+
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.8;
+    text-transform: uppercase;
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+
+  /* .price__value */
+
+  &__value {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+
+  /* .price__field */
+
+  &__field {
+     position: relative;
+    padding: 20px;
+    color: #283645;
+    text-transform: uppercase;
+    border-bottom: 2px solid #f2f2f2;
+    background: #fff;
+
+    &--yes::before {
+      content: "";
+      top: 29px;
+      right: 25px;
+      position: absolute;
+      width: 15px;
+      height: 3px;
+      border-radius: 5px;
+       background: #3dc644;
+        transform: rotate(45deg);
+    }
+    &--yes::after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      right: 6px;
+      width: 27px;
+      height: 3px;
+      border-radius: 5px;
+      background: #3dc644;
+      transform: rotate(-45deg);
+    }
+    &--no::before {
+      content: "";
+      top: 25px;
+      right: 10px;
+      position: absolute;
+      width: 28px;
+      height: 3px;
+      border-radius: 5px;
+       background: #F25B26;
+        transform: rotate(45deg);
+    }
+    &--no::after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      right: 10px;
+      width: 28px;
+      height: 3px;
+      border-radius: 5px;
+      background: #F25B26;
+      transform: rotate(-45deg);
+    }
+  }
+  &__slider {
+     padding: 40px 0px 0px 0px;
+  }
+}

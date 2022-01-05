@@ -1,0 +1,77 @@
+
+
+.intro {
+  padding: 95px 0 0 0;
+  color: #fff;
+  background: url(../img/bg_intro.jpg) center / cover;
+  /* .intro__container */
+  &__container {
+  }
+  &__title {
+    padding: 0 15px 0;
+    margin-bottom: 30px;
+  }
+
+  &__download {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 28px 20px 40px;
+    text-align: center;
+    background: #1d2631;
+  }
+
+  &__btn {
+    width: 100%;
+    padding: 15px 38px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    transition: .3s;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    &:hover {
+      color: #d22856;
+      background: #fff;
+    }
+     &:active {
+      color: #d22856;
+      background: #fff;
+      opacity: 0.3;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 35px;
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+  &__icon {
+    width: 50px;
+    height: 60px;
+  }
+
+  &__download-description {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+}
+
+.logo-apple {
+  background: url(../img/download_icons/apple-logo.svg) no-repeat bottom;
+}
+.logo-android {
+  background: url(../img/download_icons/android-logo.svg) no-repeat bottom;
+}
+
+.logo-microsoft {
+  background: url(../img/download_icons/microsoft-logo.svg) no-repeat bottom /
+    contain;
+}
