@@ -5,11 +5,20 @@
   color: #fff;
   background: url(../img/bg_intro.jpg) center / cover;
   /* .intro__container */
-  &__container {
-  }
   &__title {
     padding: 0 15px 0;
     margin-bottom: 30px;
+  }
+  &__mobile-img{
+    @media (min-width:599.5px){
+      display: none;
+    }
+  }
+  &__tablet-img {
+    display: none;
+    @media (min-width:599.5px){
+      display: inline-block;
+    }
   }
 
   &__download {

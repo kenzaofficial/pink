@@ -1,10 +1,11 @@
 .about {
   padding: 45px 0px 0px 0px;
   text-align: center;
-  background: -webkit-linear-gradient(-85deg, #fff 23%, #F2F2F2 23%);
+  background: -webkit-linear-gradient(-85deg, #fff 23%, #f2f2f2 23%);
   /* .about__container */
 
   &__container {
+    position: relative;
   }
 
   /* .about__title */
@@ -18,19 +19,31 @@
   /* .about__body */
 
   &__body {
-    padding: 100px 0px 0px 0px;
-    &::after {
-      display: block;
-      content: "";
-      height: 280px;
-      background: url(../img/iphone_about.png) no-repeat center 0px;
+    padding: 100px 0px 320px 0px;
+    @media (min-width: 599.5px) {
+      padding: 100px 0;
+      width: 50%;
+      margin-left: auto;
+      text-align: left;
+    }
+  }
+  &__img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    @media (min-width: 599.5px) {
+      bottom: 125px;
+      left: 70px;
+      transform: translate(0);
+      transform: scale(1.7);
     }
   }
 
   /* .about__item */
 
   &__item {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
   }
 
   /* .about__sub-title */
@@ -42,6 +55,9 @@
 
     &:not(:last-child) {
       margin-bottom: 20px;
+      @media (min-width: 599.5px) {
+        margin-bottom: 15px;
+      }
     }
   }
 
@@ -49,5 +65,59 @@
 
   &__text {
     line-height: 1.7;
+  }
+}
+
+
+
+.advantage {
+  background-color: #fff;
+  position: relative;
+  display: none;
+  margin-top: -100px;
+  padding: 50px 20px;
+  column-gap: 70px;
+  align-items: center;
+  @media (min-width:599.5px){ 
+    display: flex;
+  }
+  /* .advantage__img */
+
+  &__img {
+    flex: 1 1 50%;
+  }
+
+  /* .advantage__content */
+
+  &__content {
+    flex: 1 1 50%;
+  }
+
+  /* .advantage__title */
+
+  &__title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.15;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  /* .advantage__text */
+
+  &__text {
+     line-height: 1.71;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  /* .advantage__link */
+
+  &__link {
+    display: inline-block;
+    color: #D22856;
+    text-decoration: line-through;
   }
 }

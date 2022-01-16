@@ -17,3 +17,16 @@ font-weight: 300;
 line-height: 1.1;
 text-align: center;
 }
+
+.mobile-logo {
+   @media (min-width:599.5px){
+      display: none;
+   }
+}
+
+.tablet-logo {
+   display: none;
+   @media (min-width:599.5px){
+        display: block;
+   }
+}
