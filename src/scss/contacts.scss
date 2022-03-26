@@ -1,9 +1,11 @@
 .contacts {
+  position: relative;
   padding: 40px;
   text-align: center;
   /* .contacts__title */
 
   &__title {
+    padding: 0 20px;
     &:not(:last-child) {
       margin-bottom: 40px;
     }
@@ -12,6 +14,12 @@
   /* .contacts__body */
 
   &__body {
+    @media (min-width: 659.5px) {
+      justify-content: center;
+      gap: 25px 95px;
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   /* .contacts__item */
@@ -37,7 +45,7 @@
     font-weight: 300;
     line-height: 1.375;
     color: #d22856;
-    transition: .3s;
+    transition: 0.3s;
     &:hover {
       color: #283645;
     }

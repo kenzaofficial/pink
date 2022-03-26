@@ -7,8 +7,8 @@
   font-size: 18px;
   background-color: rgba($color: #000000, $alpha: 0.3);
   z-index: 5;
-  @media (min-width:599.5px){
-     padding: 35px 0; 
+  @media (min-width:659.5px){
+     padding: 27px 0 43px; 
   }
   &::before {
     content: "";
@@ -28,6 +28,9 @@
     position: relative;
     display: flex;
     align-items: center;
+    @media (min-width:659.5px){
+      align-items: flex-end;
+    }
   }
 
   /* .header__logo */
@@ -107,7 +110,7 @@
   /* .header__menu */
   &__menu {
     margin-left: auto;
-
+     padding: 66px 0 0 0;
     @media (max-width: 860.5px) {
       overflow: auto;
       position: fixed;
@@ -115,12 +118,17 @@
       left: 0;
       width: 100%;
       max-height: 100%;
-      padding: 66px 0 0 0;
       background-color: #283645;
       transition: 0.3s;
       &.active {
         top: 0;
       }
+    }
+    @media (min-width: 659.5px) {
+      padding: 109px 0 0 0 ;
+    }
+    @media (min-width: 860.6px) {
+      padding:  0 ;
     }
   }
 

@@ -41,7 +41,7 @@
 		"gulp-zip": "latest",
 		"imagemin-webp": "latest",
 		"lightgallery": "latest",
-		"mini-css-extract-plugin": "latest",
+		"mini-css-extract-plugin": "2.4.5",
 		"nouislider": "latest",
 		"sass": "latest",
 		"sass-loader": "latest",

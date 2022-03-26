@@ -3,12 +3,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (min-width: 659.5px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
 
   /* .footer__link */
 
   &__link {
     &:not(:last-child) {
       margin-bottom: 35px;
+      @media (min-width: 659.5px) {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -28,6 +36,9 @@
   &__socials {
     &:not(:last-child) {
       margin-bottom: 35px;
+      @media (min-width: 659.5px) {
+        margin-bottom: 0;
+      }
     }
   }
 
