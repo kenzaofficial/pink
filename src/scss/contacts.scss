@@ -16,6 +16,7 @@
   &__body {
     @media (min-width: 659.5px) {
       justify-content: center;
+      flex: 0 0 50%;
       gap: 25px 95px;
       display: flex;
       flex-wrap: wrap;

@@ -5,8 +5,8 @@
   text-align: center;
   background: -webkit-linear-gradient(-86deg, #fff 86%, #f2f2f2 86%);
   @media (min-width: 519.5px) {
-      background: -webkit-linear-gradient(-86deg, #fff 83%, #f2f2f2 83%);
-    }
+    background: -webkit-linear-gradient(-86deg, #fff 83%, #f2f2f2 83%);
+  }
   /* .reviews__author */
   &__container {
     display: flex;
@@ -20,7 +20,6 @@
     @media (min-width: 983.5px) {
       padding-bottom: 90px;
     }
-    
   }
 
   &__author {
@@ -67,7 +66,8 @@
 .slider-controls {
   display: flex;
   justify-content: center;
-  column-gap: 19px;
+  flex-wrap: wrap;
+  gap: 19px;
 }
 
 .slider-control {
