@@ -224,7 +224,7 @@
    "@media min": {
       "prefix": "mmd",
       "body": [
-         "@media (min-width:em($1)){\n\t $2 \n}"
+         "@media (min-width:$1px){\n\t $2 \n}"
       ],
       "description": "Добавляет медиазапрос min-width c переводом в EM"
    },

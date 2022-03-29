@@ -1,10 +1,14 @@
 .about {
   padding: 45px 0px 0px 0px;
   text-align: center;
-  background: -webkit-linear-gradient(-85deg, #fff 23%, #F2F2F2 23%);
+  background: -webkit-linear-gradient(-85deg, #fff 38%, #f2f2f2 20%);
+  @media (max-width: 659.5px) {
+    background: -webkit-linear-gradient(-85deg, #fff 23%, #f2f2f2 23%);
+  }
   /* .about__container */
 
   &__container {
+    position: relative;
   }
 
   /* .about__title */
@@ -18,19 +22,33 @@
   /* .about__body */
 
   &__body {
-    padding: 100px 0px 0px 0px;
-    &::after {
-      display: block;
-      content: "";
-      height: 280px;
-      background: url(../img/iphone_about.png) no-repeat center 0px;
+    padding: 100px 0px 320px 0px;
+    @media (min-width: 659.5px) {
+      padding: 100px 0;
+      width: 50%;
+      margin-left: auto;
+      text-align: left;
     }
+   
+  }
+  &__img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    @media (min-width: 659.5px) {
+      bottom: 125px;
+      left: 70px;
+      transform: translate(0);
+      transform: scale(1.7);
+    }
+    
   }
 
   /* .about__item */
 
   &__item {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
   }
 
   /* .about__sub-title */
@@ -42,6 +60,9 @@
 
     &:not(:last-child) {
       margin-bottom: 20px;
+      @media (min-width: 659.5px) {
+        margin-bottom: 15px;
+      }
     }
   }
 

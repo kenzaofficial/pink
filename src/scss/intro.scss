@@ -1,18 +1,51 @@
-
-
 .intro {
-  padding: 95px 0 0 0;
   color: #fff;
   background: url(../img/bg_intro.jpg) center / cover;
-  /* .intro__container */
   &__container {
+    position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 95px 0 0 0;
+  
+  @media (min-width: 659.5px) {
+    padding: 210px 20px 120px;
   }
+  }
+  /* .intro__container */
   &__title {
     padding: 0 15px 0;
     margin-bottom: 30px;
+    @media (min-width: 659.5px) {
+      margin-bottom: 40px;
+      max-width: 300px;
+    }
+  }
+  &__mobile-img {
+    @media (min-width: 659.5px) {
+      display: none;
+    }
+  }
+  &__tablet-img {
+    display: none;
+    @media (min-width: 659.5px) {
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  &__column {
+    @media (min-width: 659.5px) {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__download {
+    position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -20,24 +53,37 @@
     padding: 28px 20px 40px;
     text-align: center;
     background: #1d2631;
+    @media (min-width: 659.5px) {
+      background: none;
+      padding: 0;
+    }
   }
 
   &__btn {
     width: 100%;
-    padding: 15px 38px;
+    padding: 15px 20px;
     font-size: 18px;
     font-weight: 700;
     border: 3px solid #fff;
     border-radius: 30px;
-    transition: .3s;
+    transition: 0.3s;
+    @media (min-width: 659.5px) {
+      max-width: 300px;
+    }
+     @media (min-width: 1199.5px) {
+      font-size: 21px;
+    }
     &:not(:last-child) {
       margin-bottom: 30px;
+      @media (min-width: 659.5px) {
+        margin-bottom: 40px;
+      }
     }
     &:hover {
       color: #d22856;
       background: #fff;
     }
-     &:active {
+    &:active {
       color: #d22856;
       background: #fff;
       opacity: 0.3;
@@ -50,6 +96,9 @@
     column-gap: 35px;
     &:not(:last-child) {
       margin-bottom: 25px;
+      @media (min-width: 659.5px) {
+        margin-bottom: 35px;
+      }
     }
   }
   &__icon {
@@ -58,9 +107,14 @@
   }
 
   &__download-description {
+    max-width: 300px;
     font-size: 14px;
     font-weight: 300;
     line-height: 1.7;
+    @media (min-width: 659.5px) {
+      font-size: 18px;
+      line-height: 1.3;
+    }
   }
 }
 
