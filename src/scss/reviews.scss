@@ -6,6 +6,10 @@
   background: -webkit-linear-gradient(-86deg, #fff 86%, #f2f2f2 86%);
   @media (min-width: 519.5px) {
     background: -webkit-linear-gradient(-86deg, #fff 83%, #f2f2f2 83%);
+    @media (min-width: 980.5px) {
+      padding-top: 195px;
+     margin-top: 0;
+    }
   }
   /* .reviews__author */
   &__container {
@@ -17,7 +21,7 @@
     @media (min-width: 859.5px) {
       padding-bottom: 50px;
     }
-    @media (min-width: 983.5px) {
+    @media (min-width: 980.5px) {
       padding-bottom: 90px;
     }
   }
