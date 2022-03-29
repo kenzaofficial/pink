@@ -11,26 +11,38 @@
 @import "map";
 @import "footer";
 
-
 .title {
-font-size: 24px;
-font-weight: 300;
-line-height: 1.2;
-text-align: center;
-@media (min-width:659.5px){
-      font-size: 40px;
-   }
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.2;
+  text-align: center;
+  @media (min-width: 659.5px) {
+    font-size: 40px;
+  }
+  @media (min-width: 1199.5px) {
+    font-size: 50px;
+  }
 }
 
 .mobile-logo {
-   @media (min-width:659.5px){
-      display: none;
-   }
+  @media (min-width: 659.5px) {
+    display: none;
+  }
 }
 
 .tablet-logo {
-   display: none;
-   @media (min-width:659.5px){
-        display: block;
-   }
+  display: none;
+  @media (min-width: 659.5px) {
+    display: block;
+  }
+  @media (min-width: 1199.5px) {
+    display: none;
+  }
+}
+
+.desktop-logo {
+  display: none;
+  @media (min-width: 1199.5px) {
+    display: block;
+  }
 }

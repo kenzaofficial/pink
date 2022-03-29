@@ -28,6 +28,9 @@
     &:active path {
       fill: #000;
     }
+    @media (min-width: 1199.5px) {
+        display: none;
+      }
   }
 
   /* .footer__socials */
@@ -46,6 +49,10 @@
   &__copyright {
     @media (min-width: 659.5px) {
         margin: 0 0 0 auto;
+      }
+      @media (min-width: 1199.5px) {
+        font-size: 18px;
+        line-height: 1;
       }
   }
 }

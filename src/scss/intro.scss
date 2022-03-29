@@ -16,7 +16,6 @@
     padding: 0 15px 0;
     margin-bottom: 30px;
     @media (min-width: 659.5px) {
-      padding: 0 45px 0;
       margin-bottom: 40px;
       max-width: 300px;
     }
@@ -70,6 +69,9 @@
     transition: 0.3s;
     @media (min-width: 659.5px) {
       max-width: 300px;
+    }
+     @media (min-width: 1199.5px) {
+      font-size: 21px;
     }
     &:not(:last-child) {
       margin-bottom: 30px;
