@@ -8,7 +8,17 @@
     background: -webkit-linear-gradient(-86deg, #fff 83%, #f2f2f2 83%);
     @media (min-width: 980.5px) {
       padding-top: 195px;
-     margin-top: 0;
+      margin-top: 0;
+      &::after {
+        position: absolute;
+        content: "";
+        top: 80px;
+        left: 50%;
+        background: url(../img/quotes.svg) 50% 5px no-repeat;
+        width: 80px;
+        height: 75px;
+        transform: translate(-50%);
+      }
     }
   }
   /* .reviews__author */
@@ -64,6 +74,12 @@
       line-height: 1.6;
       font-size: 18px;
     }
+    @media (min-width: 980px) {
+      position: relative;
+      order: -1;
+      line-height: 1.6;
+      font-size: 18px;
+    }
   }
 }
 
@@ -80,6 +96,9 @@
   border-radius: 50%;
   background-color: #283645;
   opacity: 0.3;
+  @media (min-width: 980px) {
+    display: none;
+  }
 }
 
 .checked {
